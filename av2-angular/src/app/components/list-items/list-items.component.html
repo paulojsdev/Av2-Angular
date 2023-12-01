@@ -1,0 +1,27 @@
+<div class="list-container">
+    <h2 class="list-title">Lista de Itens</h2>
+  
+    <div class="add-task-container">
+      <input type="text" [(ngModel)]="newItemText" placeholder="Nova tarefa (máx. 100 caracteres)" class="add-task-input" />
+      <button (click)="addTask()">Adicionar</button>
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Tarefa</th>
+          <th class="actions-header">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; let i = index" [class.completed]="item.completed">
+          <td>{{ item.text }}</td>
+          <td class="actions-column">
+            <button *ngIf="!item.completed" (click)="completeTask(i)">Concluir ✅</button>
+            <button (click)="removeTask(i)">Excluir 🗑️</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
