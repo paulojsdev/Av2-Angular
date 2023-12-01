@@ -15,4 +15,11 @@
 <h1>Exercício 6</h1>
 <app-componente-pai></app-componente-pai>
 
+<h1>Exercício 7</h1>
+<div>
+  <app-form-login (loggedIn)="onLoggedIn($event)"></app-form-login>
+  <app-area-logada [email]="loggedInEmail" *ngIf="loggedIn"></app-area-logada>
+</div>
+
+
 

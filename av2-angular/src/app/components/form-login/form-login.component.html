@@ -1,1 +1,14 @@
-<p>form-login works!</p>
+<!-- form-login.component.html -->
+<div class="login-container" *ngIf="!authenticated">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" [(ngModel)]="email" required>
+  
+      <label for="password">Senha:</label>
+      <input type="password" id="password" [(ngModel)]="password" required>
+  
+      <button type="submit">Fazer Login</button>
+    </form>
+  </div>
+  

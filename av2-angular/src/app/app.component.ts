@@ -1,3 +1,4 @@
+// app.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'av2-angular';
+  loggedIn: boolean = false;
+  loggedInEmail: string = '';
+
+  onLoggedIn(isLoggedIn: boolean) {
+    this.loggedIn = isLoggedIn;
+    // Defina o e-mail apropriado ou recupere-o da lógica de autenticação
+    this.loggedInEmail = 'usuario@teste.com';
+  }
 }
