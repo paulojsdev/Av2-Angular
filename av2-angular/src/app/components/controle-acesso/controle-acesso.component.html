@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="button-container">
+      <button (click)="setRole('administrador')">Administrador</button>
+      <button (click)="setRole('colaborador')">Colaborador</button>
+      <button (click)="setRole('usuário')">Usuário</button>
+    </div>
+  
+    <div *ngIf="role">
+      <p *ngIf="role === 'administrador'">Você tem permissão de administrador</p>
+      <p *ngIf="role === 'colaborador'">Você tem permissão de colaborador</p>
+      <p *ngIf="role === 'usuário'">Você tem permissão de usuário</p>
+    </div>
+  </div>
+  
