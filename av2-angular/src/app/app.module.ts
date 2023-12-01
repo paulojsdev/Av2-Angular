@@ -11,6 +11,7 @@ import { ComponentePaiComponent } from './components/componente-pai/componente-p
 import { ComponenteFilhoComponent } from './components/componente-filho/componente-filho.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { AreaLogadaComponent } from './components/area-logada/area-logada.component';
+import { DadosAlunosComponent } from './components/dados-alunos/dados-alunos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AreaLogadaComponent } from './components/area-logada/area-logada.compon
     ComponentePaiComponent,
     ComponenteFilhoComponent,
     FormLoginComponent,
-    AreaLogadaComponent
+    AreaLogadaComponent,
+    DadosAlunosComponent
   ],
   imports: [
     BrowserModule,

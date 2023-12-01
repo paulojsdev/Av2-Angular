@@ -1,0 +1,20 @@
+<!-- dados-alunos.component.html -->
+<table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Matrícula</th>
+        <th>Curso</th>
+        <th>Média Global</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aluno of alunos">
+        <td>{{ aluno.nome }}</td>
+        <td>{{ aluno.matricula }}</td>
+        <td>{{ aluno.curso }}</td>
+        <td>{{ aluno.mediaGlobal }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
